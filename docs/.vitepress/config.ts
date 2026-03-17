@@ -4,10 +4,10 @@ export default defineConfig({
   title: 'Christ Gospel Church',
   description: 'Help center and documentation for CGC applications',
   lang: 'en-US',
-  head: [['link', { rel: 'icon', href: '/favicon.svg' }]],
+  head: [['link', { rel: 'icon', href: '/favicon.png' }]],
 
   themeConfig: {
-    logo: '/logo.svg',
+    logo: '/cgc-logo-blue.png',
     siteTitle: 'CGC Help Center',
 
     nav: [

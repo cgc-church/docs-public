@@ -6,7 +6,7 @@ hero:
   text: Help Center
   tagline: Everything you need to get the most out of CGC applications
   image:
-    src: /logo.svg
+    src: /cgc-logo-blue.png
     alt: CGC Logo
   actions:
     - theme: brand
