@@ -36,6 +36,7 @@ export default defineConfig({
               text: "Offline & Downloads",
               link: "/help/offline-downloads",
             },
+            { text: "Admin Guide", link: "/help/admin-guide" },
             { text: "FAQ", link: "/help/faq" },
             { text: "Troubleshooting", link: "/help/troubleshooting" },
           ],
@@ -47,8 +48,10 @@ export default defineConfig({
           items: [
             { text: "Overview", link: "/features/" },
             { text: "Sermons", link: "/features/sermons" },
+            { text: "Media Library", link: "/features/media-library" },
             { text: "Subscriptions", link: "/features/subscriptions" },
             { text: "Mobile App", link: "/features/mobile-app" },
+            { text: "AI-Powered Features", link: "/features/ai-features" },
           ],
         },
       ],
