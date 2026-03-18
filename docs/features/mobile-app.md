@@ -19,6 +19,22 @@ The app is free to download. A subscription unlocks premium features like offlin
 
 ## Feature Overview
 
+```mermaid
+graph LR
+    Home[Home Screen] --> S[Sermons]
+    Home --> M[Music]
+    Home --> P[Podcasts]
+    Home --> DL[Downloads]
+    Home --> PR[Profile]
+    S --> Play[Stream / Download]
+    M --> Listen[Listen / Playlist]
+    P --> Episodes[Episodes / Radio]
+    DL --> Offline[Offline Content]
+    PR --> Settings[Settings / Account]
+```
+
+*Diagram: App feature map*
+
 Here is everything the CGC mobile app offers:
 
 | Feature | Description |

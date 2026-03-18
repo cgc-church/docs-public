@@ -2,6 +2,20 @@
 
 Access premium content and support Christ Gospel Church through subscriptions. Whether you are an individual listener or want to share with your family, there is a plan for you.
 
+```mermaid
+flowchart TD
+    A([What do you need?]) --> B{Usage level}
+    B -->|Stream & browse| C[Free Tier]
+    B -->|Downloads + full library| D{How many people?}
+    D -->|Just me| E[Premium Individual]
+    D -->|Up to 5| F[Family Plan]
+    C --> G([Basic streaming & playlists])
+    E --> H([Offline + HD + full access])
+    F --> I([Shared premium for household])
+```
+
+*Diagram: Plan comparison decision tree*
+
 ## Plan Tiers
 
 The CGC platform offers multiple subscription tiers to fit your needs. Visit [subscriptions.christgospel.org](https://subscriptions.christgospel.org) to view current plans and pricing.

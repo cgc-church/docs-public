@@ -2,6 +2,25 @@
 
 Having trouble? This guide covers solutions to common issues across the CGC mobile app, web dashboard, and subscription services. Find your issue below and follow the steps to resolve it.
 
+```mermaid
+flowchart TD
+    A([What is the issue?]) --> B{Category}
+    B -->|App crashes| C[Force close & update app]
+    B -->|Can't login| D[Reset password / Check email]
+    B -->|No content| E[Check internet / Pull to refresh]
+    B -->|Payment issue| F[Update card / Contact support]
+    B -->|Downloads fail| G[Check storage & subscription]
+    B -->|Audio won't play| H[Check connection & volume]
+    C --> I([Still stuck? Contact support])
+    D --> I
+    E --> I
+    F --> I
+    G --> I
+    H --> I
+```
+
+*Diagram: Troubleshooting decision tree*
+
 ## Mobile App Issues
 
 ### App won't load or crashes on startup

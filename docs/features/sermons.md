@@ -2,6 +2,22 @@
 
 The sermon library is the heart of the CGC platform. With thousands of sermons available, you can browse, stream, download, and organize messages from preachers across the Christ Gospel Church community.
 
+```mermaid
+flowchart TD
+    A([Browse Library]) --> B{Filter by}
+    B --> C[Preacher]
+    B --> D[Date]
+    B --> E[Topic]
+    B --> F[Series]
+    C & D & E & F --> G[Select Sermon]
+    G --> H([Play / Stream])
+    G --> I[Add to Playlist]
+    G --> J[Download Offline]
+    G --> K[Share]
+```
+
+*Diagram: Sermon discovery journey*
+
 ## Browsing Sermons
 
 There are several ways to find sermons in the library:

@@ -2,6 +2,21 @@
 
 With an active subscription, you can download sermons to listen or watch anytime — even without an internet connection. This guide explains how to download content, manage your downloads, and troubleshoot common issues.
 
+```mermaid
+flowchart TD
+    A([Select Content]) --> B{Subscription active?}
+    B -->|No| C[Subscribe first]
+    B -->|Yes| D{Enough storage?}
+    D -->|No| E[Free up space]
+    D -->|Yes| F[Download begins]
+    F --> G([Available Offline])
+    G --> H{Back online?}
+    H -->|Yes| I([Sync progress])
+    H -->|No| J([Listen/Watch offline])
+```
+
+*Diagram: Download process flow*
+
 ## How to Download Sermons
 
 1. Open the CGC app on your mobile device

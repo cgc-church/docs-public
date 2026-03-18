@@ -2,6 +2,38 @@
 
 This guide covers everything you need to know about managing your CGC subscription, from signing up to updating your payment information.
 
+```mermaid
+flowchart TD
+    A([New User]) --> B{What do you need?}
+    B -->|Basic access| C[Free Tier]
+    B -->|Full features| D{Individual or Family?}
+    D -->|Just me| E[Premium Individual]
+    D -->|My household| F[Family Plan]
+    C --> G([Browse & Stream])
+    E --> H([Downloads + Full Library])
+    F --> I([Up to 5 accounts + Premium])
+```
+
+*Diagram: Subscription decision tree*
+
+```mermaid
+sequenceDiagram
+    participant U as User
+    participant A as CGC App
+    participant S as Stripe
+    participant E as Email
+    U->>A: Select plan & subscribe
+    A->>S: Redirect to checkout
+    U->>S: Enter payment details
+    S->>S: Process payment
+    S-->>A: Payment confirmed
+    A-->>U: Premium access activated
+    S->>E: Send receipt
+    E-->>U: Confirmation email
+```
+
+*Diagram: Payment flow*
+
 ## How to Subscribe
 
 1. Visit [subscriptions.christgospel.org](https://subscriptions.christgospel.org)

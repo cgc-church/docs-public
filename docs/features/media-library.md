@@ -2,6 +2,25 @@
 
 The CGC platform offers a rich media library that goes beyond sermons. From music and podcasts to books and curated playlists, there is a wide variety of content to explore and enjoy.
 
+```mermaid
+flowchart TD
+    A([Media Library]) --> B[Music]
+    A --> C[Podcasts]
+    A --> D[Radio]
+    A --> E[Video]
+    A --> F[Literature]
+    B --> G{Action}
+    C --> G
+    D --> G
+    E --> G
+    F --> G
+    G -->|Stream| H([Play Now])
+    G -->|Save| I([Download Offline])
+    G -->|Organize| J([Add to Playlist])
+```
+
+*Diagram: Media browsing flow*
+
 ## Music
 
 The CGC music library features a growing collection of songs, albums, and artists from the Christ Gospel Church community.

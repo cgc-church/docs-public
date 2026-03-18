@@ -2,6 +2,18 @@
 
 Welcome to Christ Gospel Church's digital platform! Whether you're here to listen to sermons, stay connected with your church community, or manage your subscription, we're glad you're here.
 
+```mermaid
+flowchart TD
+    A([Download App]) --> B([Create Account])
+    B --> C([Browse Content])
+    C --> D{Want Premium?}
+    D -->|Yes| E([Subscribe])
+    D -->|No| F([Enjoy Free Tier])
+    E --> G([Enjoy Premium Features])
+```
+
+*Diagram: User onboarding journey*
+
 ## What You Can Do
 
 With the CGC platform, you can:

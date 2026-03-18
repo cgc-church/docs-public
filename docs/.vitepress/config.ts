@@ -10,6 +10,87 @@ export default defineConfig({
   base,
   head: [["link", { rel: "icon", href: `${base}favicon.png` }]],
 
+  locales: {
+    root: {
+      label: "English",
+      lang: "en-US",
+    },
+    es: {
+      label: "Español",
+      lang: "es-MX",
+      themeConfig: {
+        nav: [
+          { text: "Inicio", link: "/es/" },
+          { text: "Ayuda", link: "/es/help/getting-started" },
+          { text: "Funciones", link: "/es/features/" },
+          { text: "Changelog", link: "/es/changelog/" },
+        ],
+        sidebar: {
+          "/es/help/": [
+            {
+              text: "Centro de Ayuda",
+              items: [
+                {
+                  text: "Primeros Pasos",
+                  link: "/es/help/getting-started",
+                },
+                {
+                  text: "Guía de Inicio de Sesión",
+                  link: "/es/help/login-guide",
+                },
+                {
+                  text: "Gestionar Suscripción",
+                  link: "/es/help/manage-subscription",
+                },
+                {
+                  text: "Descargas y Offline",
+                  link: "/es/help/offline-downloads",
+                },
+                {
+                  text: "Guía del Administrador",
+                  link: "/es/help/admin-guide",
+                },
+                {
+                  text: "Preguntas Frecuentes",
+                  link: "/es/help/faq",
+                },
+                {
+                  text: "Solución de Problemas",
+                  link: "/es/help/troubleshooting",
+                },
+              ],
+            },
+          ],
+          "/es/features/": [
+            {
+              text: "Funciones",
+              items: [
+                { text: "Resumen", link: "/es/features/" },
+                { text: "Sermones", link: "/es/features/sermons" },
+                {
+                  text: "Biblioteca Multimedia",
+                  link: "/es/features/media-library",
+                },
+                {
+                  text: "Suscripciones",
+                  link: "/es/features/subscriptions",
+                },
+                {
+                  text: "Aplicación Móvil",
+                  link: "/es/features/mobile-app",
+                },
+                {
+                  text: "Funciones con IA",
+                  link: "/es/features/ai-features",
+                },
+              ],
+            },
+          ],
+        },
+      },
+    },
+  },
+
   themeConfig: {
     logo: "/cgc-logo-blue.png",
     siteTitle: "CGC Help Center",

@@ -2,6 +2,26 @@
 
 This guide walks you through creating an account, logging in, resetting your password, and resolving common login issues.
 
+```mermaid
+sequenceDiagram
+    participant U as User
+    participant A as CGC App
+    participant X as Xano API
+    participant E as Email
+    U->>A: Enter email & password
+    A->>X: Authentication request
+    X->>X: Validate credentials
+    X-->>A: Auth token / OTP required
+    X->>E: Send verification code
+    E-->>U: OTP code received
+    U->>A: Enter OTP code
+    A->>X: Verify OTP
+    X-->>A: Session confirmed
+    A-->>U: Login successful
+```
+
+*Diagram: Login authentication flow*
+
 ## Creating an Account
 
 ### Mobile App
@@ -41,6 +61,20 @@ Administrator accounts are created by your church's admin team. If you need admi
 5. You'll be redirected to the dashboard home screen
 
 ## How to Reset Your Password
+
+```mermaid
+flowchart TD
+    A([Forgot Password]) --> B[Tap Forgot Password]
+    B --> C[Enter email address]
+    C --> D[Check email for reset link]
+    D --> E{Link received?}
+    E -->|Yes| F[Click link & set new password]
+    E -->|No| G[Check spam folder]
+    G --> D
+    F --> H([Sign in with new password])
+```
+
+*Diagram: Password reset flow*
 
 If you've forgotten your password, you can reset it in a few steps:
 

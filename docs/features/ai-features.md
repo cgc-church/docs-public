@@ -2,6 +2,23 @@
 
 The CGC platform uses artificial intelligence to help you discover content, find answers, and get personalized recommendations. These features are designed to enhance your experience and make it easier to engage with the church's library of sermons, music, and more.
 
+```mermaid
+sequenceDiagram
+    participant U as User
+    participant App as CGC App
+    participant AI as AI Engine
+    participant DB as Content Library
+    U->>App: Type natural language query
+    App->>AI: Process search request
+    AI->>AI: Understand intent & context
+    AI->>DB: Semantic search
+    DB-->>AI: Matching results
+    AI-->>App: Ranked & personalized results
+    App-->>U: Display relevant content
+```
+
+*Diagram: AI search flow*
+
 ## AI-Powered Sermon Search
 
 Finding the right sermon has never been easier. Our AI-powered search goes beyond simple keyword matching to understand what you are looking for.

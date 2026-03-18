@@ -32,6 +32,20 @@ When you first receive your admin invitation:
 
 ## Dashboard Overview
 
+```mermaid
+graph LR
+    D[Dashboard Home] --> S[Sermons]
+    D --> U[Users]
+    D --> M[Music]
+    D --> P[Playlists]
+    D --> A[Analytics]
+    D --> N[Notifications]
+    D --> L[Literature]
+    D --> ST[Settings]
+```
+
+*Diagram: Admin dashboard navigation map*
+
 After signing in, you will see the main dashboard with a navigation sidebar on the left. Here is a quick overview of the main sections:
 
 - **Home** — A summary view with quick stats, recent activity, and shortcuts to common tasks
@@ -47,6 +61,23 @@ After signing in, you will see the main dashboard with a navigation sidebar on t
 - **Weekly Sermon** — Select the featured sermon of the week
 
 ---
+
+```mermaid
+sequenceDiagram
+    participant Ad as Admin
+    participant D as Dashboard
+    participant API as Xano API
+    participant CDN as CDN
+    participant U as Users
+    Ad->>D: Upload & publish content
+    D->>API: Save content metadata
+    API->>CDN: Distribute media files
+    CDN-->>U: Content available
+    API-->>D: Publish confirmed
+    D-->>Ad: Success notification
+```
+
+*Diagram: Content publishing flow*
 
 ## Managing Sermons
 
