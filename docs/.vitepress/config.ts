@@ -1,9 +1,10 @@
 import { defineConfig } from "vitepress";
+import { withMermaid } from "vitepress-plugin-mermaid";
 
 // For custom domain (e.g. help.christgospel.org), change base to '/'
 const base = "/docs-public/";
 
-export default defineConfig({
+export default withMermaid(defineConfig({
   title: "Christ Gospel Church",
   description: "Help center and documentation for CGC applications",
   lang: "en-US",
@@ -149,4 +150,4 @@ export default defineConfig({
       provider: "local",
     },
   },
-});
+}));
