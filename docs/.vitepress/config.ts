@@ -27,6 +27,15 @@ export default defineConfig({
           text: "Help Center",
           items: [
             { text: "Getting Started", link: "/help/getting-started" },
+            { text: "Login Guide", link: "/help/login-guide" },
+            {
+              text: "Manage Subscription",
+              link: "/help/manage-subscription",
+            },
+            {
+              text: "Offline & Downloads",
+              link: "/help/offline-downloads",
+            },
             { text: "FAQ", link: "/help/faq" },
             { text: "Troubleshooting", link: "/help/troubleshooting" },
           ],
