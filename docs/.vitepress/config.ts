@@ -22,68 +22,110 @@ export default withMermaid(defineConfig({
       themeConfig: {
         nav: [
           { text: "Inicio", link: "/es/" },
-          { text: "Ayuda", link: "/es/help/getting-started" },
-          { text: "Funciones", link: "/es/features/" },
+          { text: "Primeros Pasos", link: "/es/getting-started/" },
+          { text: "Contenido", link: "/es/content/sermons" },
           { text: "Changelog", link: "/es/changelog/" },
         ],
         sidebar: {
-          "/es/help/": [
+          "/es/getting-started/": [
             {
-              text: "Centro de Ayuda",
+              text: "Primeros Pasos",
               items: [
-                {
-                  text: "Primeros Pasos",
-                  link: "/es/help/getting-started",
-                },
-                {
-                  text: "Guía de Inicio de Sesión",
-                  link: "/es/help/login-guide",
-                },
-                {
-                  text: "Gestionar Suscripción",
-                  link: "/es/help/manage-subscription",
-                },
-                {
-                  text: "Descargas y Offline",
-                  link: "/es/help/offline-downloads",
-                },
-                {
-                  text: "Guía del Administrador",
-                  link: "/es/help/admin-guide",
-                },
-                {
-                  text: "Preguntas Frecuentes",
-                  link: "/es/help/faq",
-                },
-                {
-                  text: "Solución de Problemas",
-                  link: "/es/help/troubleshooting",
-                },
+                { text: "Resumen", link: "/es/getting-started/" },
+                { text: "Descargar la App", link: "/es/getting-started/download-the-app" },
+                { text: "Crear tu Cuenta", link: "/es/getting-started/create-your-account" },
               ],
             },
           ],
-          "/es/features/": [
+          "/es/account/": [
             {
-              text: "Funciones",
+              text: "Cuenta",
               items: [
-                { text: "Resumen", link: "/es/features/" },
-                { text: "Sermones", link: "/es/features/sermons" },
-                {
-                  text: "Biblioteca Multimedia",
-                  link: "/es/features/media-library",
-                },
-                {
-                  text: "Suscripciones",
-                  link: "/es/features/subscriptions",
-                },
-                {
-                  text: "Aplicación Móvil",
-                  link: "/es/features/mobile-app",
-                },
-                {
-                  text: "Funciones con IA",
-                  link: "/es/features/ai-features",
-                },
+                { text: "Iniciar Sesión", link: "/es/account/login" },
+                { text: "Recuperar Contraseña", link: "/es/account/password-recovery" },
+                { text: "Perfil", link: "/es/account/profile" },
+                { text: "Desbloqueo Biométrico", link: "/es/account/biometric-unlock" },
+                { text: "Plan Familiar", link: "/es/account/family-plan" },
+              ],
+            },
+          ],
+          "/es/content/": [
+            {
+              text: "Contenido",
+              items: [
+                { text: "Sermones", link: "/es/content/sermons" },
+                { text: "Música", link: "/es/content/music" },
+                { text: "Libros", link: "/es/content/books" },
+                { text: "Videos", link: "/es/content/videos" },
+                { text: "Podcasts y Radio", link: "/es/content/podcasts-radio" },
+                { text: "Frase del Día", link: "/es/content/quote-of-the-day" },
+                { text: "Servicios en Vivo", link: "/es/content/live-services" },
+              ],
+            },
+          ],
+          "/es/my-library/": [
+            {
+              text: "Mi Biblioteca",
+              items: [
+                { text: "Listas de Reproducción", link: "/es/my-library/playlists" },
+                { text: "Favoritos", link: "/es/my-library/favorites" },
+                { text: "Notas y Resaltados", link: "/es/my-library/notes-highlights" },
+                { text: "Descargas y Offline", link: "/es/my-library/downloads-offline" },
+                { text: "Reproducción", link: "/es/my-library/playback" },
+              ],
+            },
+          ],
+          "/es/search-ai/": [
+            {
+              text: "Búsqueda e IA",
+              items: [
+                { text: "Buscar", link: "/es/search-ai/search" },
+                { text: "Asistente IA", link: "/es/search-ai/ai-assistant" },
+              ],
+            },
+          ],
+          "/es/subscriptions/": [
+            {
+              text: "Suscripciones",
+              items: [
+                { text: "Planes", link: "/es/subscriptions/plans" },
+                { text: "Gestionar Suscripción", link: "/es/subscriptions/manage-subscription" },
+                { text: "Métodos de Pago", link: "/es/subscriptions/payment-methods" },
+                { text: "Créditos IA", link: "/es/subscriptions/ai-credits" },
+              ],
+            },
+          ],
+          "/es/settings/": [
+            {
+              text: "Configuración",
+              items: [
+                { text: "Temas", link: "/es/settings/themes" },
+                { text: "Idioma", link: "/es/settings/language" },
+                { text: "Notificaciones", link: "/es/settings/notifications" },
+              ],
+            },
+          ],
+          "/es/admin/": [
+            {
+              text: "Administración",
+              items: [
+                { text: "Resumen", link: "/es/admin/" },
+                { text: "Gestión de Contenido", link: "/es/admin/managing-content" },
+                { text: "Gestión de Usuarios", link: "/es/admin/managing-users" },
+                { text: "Notificaciones Push", link: "/es/admin/push-notifications" },
+                { text: "Tickets de Retroalimentación", link: "/es/admin/feedback-tickets" },
+              ],
+            },
+          ],
+          "/es/troubleshooting/": [
+            {
+              text: "Solución de Problemas",
+              items: [
+                { text: "Resumen", link: "/es/troubleshooting/" },
+                { text: "Problemas de Inicio de Sesión", link: "/es/troubleshooting/login-issues" },
+                { text: "Problemas de Reproducción", link: "/es/troubleshooting/playback-issues" },
+                { text: "Problemas de Descarga", link: "/es/troubleshooting/download-issues" },
+                { text: "Problemas de Facturación", link: "/es/troubleshooting/billing-issues" },
               ],
             },
           ],
@@ -98,42 +140,111 @@ export default withMermaid(defineConfig({
 
     nav: [
       { text: "Home", link: "/" },
-      { text: "Help", link: "/help/getting-started" },
-      { text: "Features", link: "/features/" },
+      { text: "Getting Started", link: "/getting-started/" },
+      { text: "Content", link: "/content/sermons" },
       { text: "Changelog", link: "/changelog/" },
     ],
 
     sidebar: {
-      "/help/": [
+      "/getting-started/": [
         {
-          text: "Help Center",
+          text: "Getting Started",
           items: [
-            { text: "Getting Started", link: "/help/getting-started" },
-            { text: "Login Guide", link: "/help/login-guide" },
-            {
-              text: "Manage Subscription",
-              link: "/help/manage-subscription",
-            },
-            {
-              text: "Offline & Downloads",
-              link: "/help/offline-downloads",
-            },
-            { text: "Admin Guide", link: "/help/admin-guide" },
-            { text: "FAQ", link: "/help/faq" },
-            { text: "Troubleshooting", link: "/help/troubleshooting" },
+            { text: "Overview", link: "/getting-started/" },
+            { text: "Download the App", link: "/getting-started/download-the-app" },
+            { text: "Create Your Account", link: "/getting-started/create-your-account" },
           ],
         },
       ],
-      "/features/": [
+      "/account/": [
         {
-          text: "Features",
+          text: "Account",
           items: [
-            { text: "Overview", link: "/features/" },
-            { text: "Sermons", link: "/features/sermons" },
-            { text: "Media Library", link: "/features/media-library" },
-            { text: "Subscriptions", link: "/features/subscriptions" },
-            { text: "Mobile App", link: "/features/mobile-app" },
-            { text: "AI-Powered Features", link: "/features/ai-features" },
+            { text: "Login", link: "/account/login" },
+            { text: "Password Recovery", link: "/account/password-recovery" },
+            { text: "Profile", link: "/account/profile" },
+            { text: "Biometric Unlock", link: "/account/biometric-unlock" },
+            { text: "Family Plan", link: "/account/family-plan" },
+          ],
+        },
+      ],
+      "/content/": [
+        {
+          text: "Content",
+          items: [
+            { text: "Sermons", link: "/content/sermons" },
+            { text: "Music", link: "/content/music" },
+            { text: "Books", link: "/content/books" },
+            { text: "Videos", link: "/content/videos" },
+            { text: "Podcasts & Radio", link: "/content/podcasts-radio" },
+            { text: "Quote of the Day", link: "/content/quote-of-the-day" },
+            { text: "Live Services", link: "/content/live-services" },
+          ],
+        },
+      ],
+      "/my-library/": [
+        {
+          text: "My Library",
+          items: [
+            { text: "Playlists", link: "/my-library/playlists" },
+            { text: "Favorites", link: "/my-library/favorites" },
+            { text: "Notes & Highlights", link: "/my-library/notes-highlights" },
+            { text: "Downloads & Offline", link: "/my-library/downloads-offline" },
+            { text: "Playback", link: "/my-library/playback" },
+          ],
+        },
+      ],
+      "/search-ai/": [
+        {
+          text: "Search & AI",
+          items: [
+            { text: "Search", link: "/search-ai/search" },
+            { text: "AI Assistant", link: "/search-ai/ai-assistant" },
+          ],
+        },
+      ],
+      "/subscriptions/": [
+        {
+          text: "Subscriptions",
+          items: [
+            { text: "Plans", link: "/subscriptions/plans" },
+            { text: "Manage Subscription", link: "/subscriptions/manage-subscription" },
+            { text: "Payment Methods", link: "/subscriptions/payment-methods" },
+            { text: "AI Credits", link: "/subscriptions/ai-credits" },
+          ],
+        },
+      ],
+      "/settings/": [
+        {
+          text: "Settings",
+          items: [
+            { text: "Themes", link: "/settings/themes" },
+            { text: "Language", link: "/settings/language" },
+            { text: "Notifications", link: "/settings/notifications" },
+          ],
+        },
+      ],
+      "/admin/": [
+        {
+          text: "Administration",
+          items: [
+            { text: "Overview", link: "/admin/" },
+            { text: "Managing Content", link: "/admin/managing-content" },
+            { text: "Managing Users", link: "/admin/managing-users" },
+            { text: "Push Notifications", link: "/admin/push-notifications" },
+            { text: "Feedback Tickets", link: "/admin/feedback-tickets" },
+          ],
+        },
+      ],
+      "/troubleshooting/": [
+        {
+          text: "Troubleshooting",
+          items: [
+            { text: "Overview", link: "/troubleshooting/" },
+            { text: "Login Issues", link: "/troubleshooting/login-issues" },
+            { text: "Playback Issues", link: "/troubleshooting/playback-issues" },
+            { text: "Download Issues", link: "/troubleshooting/download-issues" },
+            { text: "Billing Issues", link: "/troubleshooting/billing-issues" },
           ],
         },
       ],
