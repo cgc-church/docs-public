@@ -15,5 +15,8 @@
   "dependencies": {
     "mermaid": "^11.13.0",
     "vitepress-plugin-mermaid": "^2.0.17"
+  },
+  "engines": {
+    "node": ">=20.0.0"
   }
 }
